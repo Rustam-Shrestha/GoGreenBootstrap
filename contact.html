@@ -28,7 +28,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">🌳Go Green🌳</a>
+        <a class="navbar-brand" href="https://gogreen.co.uk">🌳Go Green🌳</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -87,6 +87,129 @@
               Search
             </button>
           </form>
+           <!-- modals -->
+          <div
+            class="mx-2"
+            style="
+              display: flex;
+              flex-direction: row;
+              height: 50px;
+              width: 800px;
+            "
+          >
+            <button class="btn btn-primary mx-1" data-bs-toggle="modal"
+      data-bs-target="#loginModal">Login</button>
+            <button class="btn btn-danger" data-bs-toggle="modal"
+      data-bs-target="#signupModal">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- modal -->
+    <!-- Button trigger modal -->
+  
+      
+
+    <!-- login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Already have account? Login with our account</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- when you click login button in website this will pop up -->
+          <div class="modal-body">
+
+            <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sign up modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign up with GoGreen account</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- this will pop up when you click sign up button -->
+          <div class="modal-body">
+            <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+   <div class="mb-3">
+    <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+    <input type="password" class="form-control" id="cexampleInputPassword1">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+          </div>
+          <div class="modal-footer">
+            
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Create Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
         </div>
       </div>
     </nav>
